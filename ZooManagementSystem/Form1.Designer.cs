@@ -66,10 +66,11 @@
             groupBoxActions = new GroupBox();
             tableLayoutPanel3 = new TableLayoutPanel();
             btnEat = new Button();
-            btnSleep = new Button();
-            btnFeed = new Button();
             btnVocalize = new Button();
             btnPlay = new Button();
+            btnSleep = new Button();
+            btnFeed = new Button();
+            textBoxTreat = new TextBox();
             groupBoxAnimalDetails = new GroupBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             labelViewName = new Label();
@@ -579,10 +580,11 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 86F));
             tableLayoutPanel3.Controls.Add(btnEat, 0, 1);
-            tableLayoutPanel3.Controls.Add(btnSleep, 0, 1);
-            tableLayoutPanel3.Controls.Add(btnFeed, 0, 0);
             tableLayoutPanel3.Controls.Add(btnVocalize, 1, 0);
             tableLayoutPanel3.Controls.Add(btnPlay, 2, 0);
+            tableLayoutPanel3.Controls.Add(btnSleep, 0, 0);
+            tableLayoutPanel3.Controls.Add(btnFeed, 1, 1);
+            tableLayoutPanel3.Controls.Add(textBoxTreat, 2, 1);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 19);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -605,34 +607,6 @@
             btnEat.Text = "Eat";
             btnEat.UseVisualStyleBackColor = true;
             btnEat.Click += btnEat_Click;
-            // 
-            // btnSleep
-            // 
-            btnSleep.Anchor = AnchorStyles.None;
-            btnSleep.Enabled = false;
-            btnSleep.Font = new Font("Calibri", 11.25F);
-            btnSleep.ForeColor = SystemColors.ActiveCaptionText;
-            btnSleep.Location = new Point(96, 42);
-            btnSleep.Name = "btnSleep";
-            btnSleep.Size = new Size(74, 33);
-            btnSleep.TabIndex = 3;
-            btnSleep.Text = "Sleep";
-            btnSleep.UseVisualStyleBackColor = true;
-            btnSleep.Click += btnSleep_Click;
-            // 
-            // btnFeed
-            // 
-            btnFeed.Anchor = AnchorStyles.None;
-            btnFeed.Enabled = false;
-            btnFeed.Font = new Font("Calibri", 11.25F);
-            btnFeed.ForeColor = SystemColors.ActiveCaptionText;
-            btnFeed.Location = new Point(7, 3);
-            btnFeed.Name = "btnFeed";
-            btnFeed.Size = new Size(74, 33);
-            btnFeed.TabIndex = 0;
-            btnFeed.Text = "Feed";
-            btnFeed.UseVisualStyleBackColor = true;
-            btnFeed.Click += btnFeed_Click;
             // 
             // btnVocalize
             // 
@@ -661,6 +635,43 @@
             btnPlay.Text = "Play";
             btnPlay.UseVisualStyleBackColor = true;
             btnPlay.Click += btnPlay_Click;
+            // 
+            // btnSleep
+            // 
+            btnSleep.Anchor = AnchorStyles.None;
+            btnSleep.Enabled = false;
+            btnSleep.Font = new Font("Calibri", 11.25F);
+            btnSleep.ForeColor = SystemColors.ActiveCaptionText;
+            btnSleep.Location = new Point(7, 3);
+            btnSleep.Name = "btnSleep";
+            btnSleep.Size = new Size(74, 33);
+            btnSleep.TabIndex = 3;
+            btnSleep.Text = "Sleep";
+            btnSleep.UseVisualStyleBackColor = true;
+            btnSleep.Click += btnSleep_Click;
+            // 
+            // btnFeed
+            // 
+            btnFeed.Anchor = AnchorStyles.None;
+            btnFeed.Enabled = false;
+            btnFeed.Font = new Font("Calibri", 11.25F);
+            btnFeed.ForeColor = SystemColors.ActiveCaptionText;
+            btnFeed.Location = new Point(96, 42);
+            btnFeed.Name = "btnFeed";
+            btnFeed.Size = new Size(74, 33);
+            btnFeed.TabIndex = 0;
+            btnFeed.Text = "Feed:";
+            btnFeed.UseVisualStyleBackColor = true;
+            btnFeed.Click += btnFeed_Click;
+            // 
+            // textBoxTreat
+            // 
+            textBoxTreat.Anchor = AnchorStyles.None;
+            textBoxTreat.Location = new Point(181, 47);
+            textBoxTreat.Name = "textBoxTreat";
+            textBoxTreat.Size = new Size(80, 23);
+            textBoxTreat.TabIndex = 5;
+            textBoxTreat.TextChanged += textBoxTreat_TextChanged;
             // 
             // groupBoxAnimalDetails
             // 
@@ -1011,6 +1022,7 @@
             ClientSize = new Size(615, 406);
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            MaximizeBox = false;
             Name = "Form1";
             Text = "Zoo Manager";
             tabControl1.ResumeLayout(false);
@@ -1031,6 +1043,7 @@
             groupBoxActionLog.PerformLayout();
             groupBoxActions.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
             groupBoxAnimalDetails.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
@@ -1118,5 +1131,6 @@
         private GroupBox groupBox4;
         private RichTextBox richTextBoxIntro;
         private Label labelAddNew;
+        private TextBox textBoxTreat;
     }
 }

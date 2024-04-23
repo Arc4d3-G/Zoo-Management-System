@@ -1,0 +1,5 @@
+C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Release\net8.0-windows\publish\ZooManagementSystem.exe
+C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Release\net8.0-windows\publish\ZooManagementSystem.dll
+C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Release\net8.0-windows\publish\ZooManagementSystem.deps.json
+C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Release\net8.0-windows\publish\ZooManagementSystem.runtimeconfig.json
+C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Release\net8.0-windows\publish\ZooManagementSystem.pdb

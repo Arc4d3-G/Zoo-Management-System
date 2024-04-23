@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\zoomanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|solutionrelative:zoomanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|c:\\users\\brdde\\dev\\ctu_projects\\c#\\formative 2 app\\zoomanagementsystem\\zoomanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|solutionrelative:zoomanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\zoomanagementsystem\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|solutionrelative:zoomanagementsystem\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\zoomanagementsystem\\animal classes\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|solutionrelative:zoomanagementsystem\\animal classes\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\zoomanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|solutionrelative:zoomanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\zoomanagementsystem\\zoomanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{353C50D1-9362-41D4-B938-E6461718B1FD}|ZooManagementSystem\\ZooManagementSystem.csproj|solutionrelative:zoomanagementsystem\\zoomanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "ZooManagementSystem\\Form1.cs",
+              "ToolTip": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "ZooManagementSystem\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T12:06:48.733Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "ZooManagementSystem\\Form1.cs",
+              "ToolTip": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Form1.cs",
+              "RelativeToolTip": "ZooManagementSystem\\Form1.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAUwMEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T12:10:36.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Animal Classes\\Animal.cs",
+              "RelativeDocumentMoniker": "ZooManagementSystem\\Animal Classes\\Animal.cs",
+              "ToolTip": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Animal Classes\\Animal.cs",
+              "RelativeToolTip": "ZooManagementSystem\\Animal Classes\\Animal.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAcwIcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:45:08.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "ZooManagementSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Program.cs",
+              "RelativeToolTip": "ZooManagementSystem\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:03:31.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ZooManagementSystem\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\Form1.Designer.cs",
+              "RelativeToolTip": "ZooManagementSystem\\Form1.Designer.cs",
+              "ViewState": "AQIAAJoBAAAAAAAAAAAmwLIBAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T12:10:53.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ZooManagementSystem.csproj",
+              "DocumentMoniker": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\ZooManagementSystem.csproj",
+              "RelativeDocumentMoniker": "ZooManagementSystem\\ZooManagementSystem.csproj",
+              "ToolTip": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\ZooManagementSystem.csproj",
+              "RelativeToolTip": "ZooManagementSystem\\ZooManagementSystem.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-21T12:47:48.981Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

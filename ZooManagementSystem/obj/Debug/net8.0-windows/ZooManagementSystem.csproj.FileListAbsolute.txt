@@ -15,3 +15,21 @@ C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManage
 C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.pdb
 C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.genruntimeconfig.cache
 C:\Users\brdde\DEV\CTU_Projects\C#\Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ref\ZooManagementSystem.dll
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Debug\net8.0-windows\ZooManagementSystem.exe
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Debug\net8.0-windows\ZooManagementSystem.deps.json
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Debug\net8.0-windows\ZooManagementSystem.runtimeconfig.json
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Debug\net8.0-windows\ZooManagementSystem.dll
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\bin\Debug\net8.0-windows\ZooManagementSystem.pdb
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.Form1.resources
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.Properties.Resources.resources
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.csproj.GenerateResource.cache
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.AssemblyInfoInputs.cache
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.AssemblyInfo.cs
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.sourcelink.json
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.dll
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\refint\ZooManagementSystem.dll
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.pdb
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ZooManagementSystem.genruntimeconfig.cache
+C:\Users\brdde\DEV\CTU_Projects\C#\PRG Formative 2 App\ZooManagementSystem\ZooManagementSystem\obj\Debug\net8.0-windows\ref\ZooManagementSystem.dll

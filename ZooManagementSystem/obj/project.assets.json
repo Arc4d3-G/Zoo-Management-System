@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\ZooManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\PRG Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\ZooManagementSystem.csproj",
       "projectName": "ZooManagementSystem",
-      "projectPath": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\ZooManagementSystem.csproj",
+      "projectPath": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\PRG Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\ZooManagementSystem.csproj",
       "packagesPath": "C:\\Users\\brdde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\obj\\",
+      "outputPath": "C:\\Users\\brdde\\DEV\\CTU_Projects\\C#\\PRG Formative 2 App\\ZooManagementSystem\\ZooManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,7 +74,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

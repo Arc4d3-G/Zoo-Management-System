@@ -5,12 +5,12 @@ namespace ZooManagementSystem
 {
     public partial class Form1 : Form
     {
-
+        
         string[] species = { "Giraffe", "Wolf", "Squirrel Monkey" }; // Array for keeping track of all valid species
         string[] locations = { "Pen 1", "Pen 2", "Pen 3", "Pen 4" }; // Array for keeping track of all locations
 
         // All new Wolf/Giraffe/SquirrelMonkey objects will be stored in their respective list
-        List<Wolf> wolves = new List<Wolf>(); 
+        List<Wolf> wolves = new List<Wolf>();
         List<Giraffe> giraffes = new List<Giraffe>();
         List<SquirrelMonkey> squirrelMonkeys = new List<SquirrelMonkey>();
 
@@ -24,8 +24,6 @@ namespace ZooManagementSystem
         bool speciesValid = false;
         bool locationValid = false;
         bool sexValid = false;
-        string treat = "treats";
-
 
         public Form1()
         {
@@ -62,6 +60,11 @@ namespace ZooManagementSystem
             {
                 comboBoxAddLocation.Items.Add(locations[i]);
             }
+
+            comboBoxSelectFood.Items.AddRange(Enum.GetNames(typeof(HerbivoreFoods)));
+            comboBoxSelectFood.Items.AddRange(Enum.GetNames(typeof(CarivoreFoods)));
+            comboBoxSelectFood.SelectedIndex = 0;
+
 
         }
 
@@ -173,7 +176,6 @@ namespace ZooManagementSystem
                 radioButtonMale.Checked = false;
                 radioButtonFemale.Checked = false;
                 labelSubmitSuccess.Visible = true;
-                textBoxTreat.Clear();
             }
 
         }
@@ -258,6 +260,8 @@ namespace ZooManagementSystem
                     btnVocalize.Enabled = true;
                     btnFeed.Enabled = true;
 
+                    
+
                     // Loop through wolves list to find the selected wolf & populate info text boxes 
                     foreach (Wolf wolf in wolves)
                     {
@@ -268,6 +272,8 @@ namespace ZooManagementSystem
                             textBoxViewAge.Text = wolf.Age.ToString();
                             textBoxViewLocation.Text = wolf.Location;
                             textBoxViewSex.Text = wolf.Sex;
+                            textBoxFeedTimes.Text = $"{wolf.dietInfo.mealsPerDay} Per Day";
+                            textBoxDietType.Text = wolf.dietInfo.dietType.ToString();
                         }
 
                     }
@@ -281,6 +287,8 @@ namespace ZooManagementSystem
                     btnSleep.Enabled = true;
                     btnVocalize.Enabled = false;
                     btnFeed.Enabled = true;
+                    
+
                     foreach (Giraffe giraffe in giraffes)
                     {
                         if (giraffe.Name == selectedAnimal)
@@ -290,6 +298,8 @@ namespace ZooManagementSystem
                             textBoxViewAge.Text = giraffe.Age.ToString();
                             textBoxViewLocation.Text = giraffe.Location;
                             textBoxViewSex.Text = giraffe.Sex;
+                            textBoxFeedTimes.Text = $"{giraffe.dietInfo.mealsPerDay} Per Day";
+                            textBoxDietType.Text = giraffe.dietInfo.dietType.ToString();
                         }
                     }
 
@@ -311,6 +321,8 @@ namespace ZooManagementSystem
                             textBoxViewAge.Text = squirrelMonkey.Age.ToString();
                             textBoxViewLocation.Text = squirrelMonkey.Location;
                             textBoxViewSex.Text = squirrelMonkey.Sex;
+                            textBoxFeedTimes.Text = $"{squirrelMonkey.dietInfo.mealsPerDay} Per Day";
+                            textBoxDietType.Text = squirrelMonkey.dietInfo.dietType.ToString();
                         }
                     }
                     break;
@@ -319,27 +331,52 @@ namespace ZooManagementSystem
         }
 
         /*
-         * Event handler for feed button. Derived animal's Feed() method is called and passed
-         * the treat argument. 
+         * Event handler for feed button. Checks if the selected food to feed is a valid entry of 
+         * the animal's diet type, else it throws an error.
          */
         private void btnFeed_Click(object sender, EventArgs e)
         {
-            switch (selectedSpecies)
+            string selectedFood = comboBoxSelectFood.SelectedItem.ToString();
+            try
             {
-                case "Wolf":
-                    textBoxActionLog.Text = activeWolf.Feed(treat);
-                    break;
+                switch (selectedSpecies)
+                {
+                    case "Wolf":
 
-                case "Giraffe":
-                    textBoxActionLog.Text = activeGiraffe.Feed(treat);
-                    break;
+                        if (Enum.GetNames(typeof(CarivoreFoods)).Contains(selectedFood))
+                        {
+                            textBoxActionLog.Text = activeWolf.Feed(selectedFood);
+                        }
+                        else
+                        {
+                            throw new Exception($"Invalid Food Choice. Wolves can't eat {selectedFood}");
+                        }
+                        break;
 
-                case "Squirrel Monkey":
-                    textBoxActionLog.Text = activeSquirrelMonkey.Feed(treat);
-                    break;
+                    case "Giraffe":
+                        if (Enum.GetNames(typeof(HerbivoreFoods)).Contains(selectedFood))
+                        {
+                            textBoxActionLog.Text = activeGiraffe.Feed(selectedFood);
+                        }
+                        else
+                        {
+                            throw new Exception($"Invalid Food Choice. Giraffes can't eat {selectedFood}");
+                        }
+
+                        break;
+
+                    case "Squirrel Monkey":
+
+                        textBoxActionLog.Text = activeSquirrelMonkey.Feed(selectedFood);
+                        break;
 
 
+                }
+            } catch (Exception ex)
+            {
+                textBoxActionLog.Text = ex.Message;
             }
+            
         }
 
         /*
@@ -416,26 +453,22 @@ namespace ZooManagementSystem
             switch (selectedSpecies)
             {
                 case "Wolf":
-                    textBoxActionLog.Text = activeWolf.Sleep(activeWolf.Location);
+                    textBoxActionLog.Text = activeWolf.Sleep();
                     break;
 
                 case "Giraffe":
-                    textBoxActionLog.Text = activeGiraffe.Sleep(activeGiraffe.Location);
+                    textBoxActionLog.Text = activeGiraffe.Sleep();
                     break;
 
                 case "Squirrel Monkey":
-                    textBoxActionLog.Text = activeSquirrelMonkey.Sleep(activeSquirrelMonkey.Location);
+                    textBoxActionLog.Text = activeSquirrelMonkey.Sleep();
                     break;
 
 
             }
         }
 
-        // Change treat variable value to the textBox's text. Defaults to "treats" text box is empty.
-        private void textBoxTreat_TextChanged(object sender, EventArgs e)
-        {
-            treat = textBoxTreat.Text.Length > 0 ? textBoxTreat.Text : "treats";
-        }
+
 
         // Code to create vertical tabs - taken from MS.Learn article
         private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
@@ -470,6 +503,11 @@ namespace ZooManagementSystem
             _stringFlags.Alignment = StringAlignment.Center;
             _stringFlags.LineAlignment = StringAlignment.Center;
             g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
+        }
+
+        private void comboBoxSelectFood_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

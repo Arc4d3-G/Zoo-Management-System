@@ -70,9 +70,10 @@
             btnPlay = new Button();
             btnSleep = new Button();
             btnFeed = new Button();
-            textBoxTreat = new TextBox();
+            comboBoxSelectFood = new ComboBox();
             groupBoxAnimalDetails = new GroupBox();
             tableLayoutPanel2 = new TableLayoutPanel();
+            labelFeedTimes = new Label();
             labelViewName = new Label();
             textBoxViewName = new TextBox();
             textBoxViewAge = new TextBox();
@@ -81,6 +82,9 @@
             labelViewAge = new Label();
             labelViewSex = new Label();
             labelViewLocation = new Label();
+            labelDietType = new Label();
+            textBoxDietType = new TextBox();
+            textBoxFeedTimes = new TextBox();
             groupBoxPicture = new GroupBox();
             pictureBoxViewPicture = new PictureBox();
             labelSpecies = new Label();
@@ -584,7 +588,7 @@
             tableLayoutPanel3.Controls.Add(btnPlay, 2, 0);
             tableLayoutPanel3.Controls.Add(btnSleep, 0, 0);
             tableLayoutPanel3.Controls.Add(btnFeed, 1, 1);
-            tableLayoutPanel3.Controls.Add(textBoxTreat, 2, 1);
+            tableLayoutPanel3.Controls.Add(comboBoxSelectFood, 2, 1);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 19);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -664,14 +668,15 @@
             btnFeed.UseVisualStyleBackColor = true;
             btnFeed.Click += btnFeed_Click;
             // 
-            // textBoxTreat
+            // comboBoxSelectFood
             // 
-            textBoxTreat.Anchor = AnchorStyles.None;
-            textBoxTreat.Location = new Point(181, 47);
-            textBoxTreat.Name = "textBoxTreat";
-            textBoxTreat.Size = new Size(80, 23);
-            textBoxTreat.TabIndex = 5;
-            textBoxTreat.TextChanged += textBoxTreat_TextChanged;
+            comboBoxSelectFood.Anchor = AnchorStyles.None;
+            comboBoxSelectFood.FormattingEnabled = true;
+            comboBoxSelectFood.Location = new Point(181, 47);
+            comboBoxSelectFood.Name = "comboBoxSelectFood";
+            comboBoxSelectFood.Size = new Size(80, 23);
+            comboBoxSelectFood.TabIndex = 5;
+            comboBoxSelectFood.SelectedIndexChanged += comboBoxSelectFood_SelectedIndexChanged;
             // 
             // groupBoxAnimalDetails
             // 
@@ -688,10 +693,11 @@
             // 
             // tableLayoutPanel2
             // 
-            tableLayoutPanel2.ColumnCount = 3;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4227638F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 48.7804871F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.2032528F));
+            tableLayoutPanel2.ColumnCount = 2;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35.135128F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 64.86487F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel2.Controls.Add(labelFeedTimes, 0, 5);
             tableLayoutPanel2.Controls.Add(labelViewName, 0, 0);
             tableLayoutPanel2.Controls.Add(textBoxViewName, 1, 0);
             tableLayoutPanel2.Controls.Add(textBoxViewAge, 1, 1);
@@ -700,17 +706,33 @@
             tableLayoutPanel2.Controls.Add(labelViewAge, 0, 1);
             tableLayoutPanel2.Controls.Add(labelViewSex, 0, 2);
             tableLayoutPanel2.Controls.Add(labelViewLocation, 0, 3);
+            tableLayoutPanel2.Controls.Add(labelDietType, 0, 4);
+            tableLayoutPanel2.Controls.Add(textBoxDietType, 1, 4);
+            tableLayoutPanel2.Controls.Add(textBoxFeedTimes, 1, 5);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(3, 22);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 5;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowCount = 6;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 17.408493F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 17.4085026F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 17.4085026F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 17.4085026F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 16.2943573F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.07164F));
             tableLayoutPanel2.Size = new Size(264, 198);
             tableLayoutPanel2.TabIndex = 0;
+            // 
+            // labelFeedTimes
+            // 
+            labelFeedTimes.Anchor = AnchorStyles.Right;
+            labelFeedTimes.AutoSize = true;
+            labelFeedTimes.Font = new Font("Calibri", 11.25F);
+            labelFeedTimes.ForeColor = Color.Black;
+            labelFeedTimes.Location = new Point(6, 174);
+            labelFeedTimes.Name = "labelFeedTimes";
+            labelFeedTimes.Size = new Size(83, 18);
+            labelFeedTimes.TabIndex = 9;
+            labelFeedTimes.Text = "Feed Times:";
             // 
             // labelViewName
             // 
@@ -718,7 +740,7 @@
             labelViewName.AutoSize = true;
             labelViewName.Font = new Font("Calibri", 11.25F);
             labelViewName.ForeColor = Color.Black;
-            labelViewName.Location = new Point(17, 10);
+            labelViewName.Location = new Point(40, 8);
             labelViewName.Name = "labelViewName";
             labelViewName.Size = new Size(49, 18);
             labelViewName.TabIndex = 0;
@@ -728,7 +750,7 @@
             // 
             textBoxViewName.Anchor = AnchorStyles.None;
             textBoxViewName.Enabled = false;
-            textBoxViewName.Location = new Point(83, 6);
+            textBoxViewName.Location = new Point(128, 4);
             textBoxViewName.Name = "textBoxViewName";
             textBoxViewName.Size = new Size(100, 26);
             textBoxViewName.TabIndex = 4;
@@ -737,7 +759,7 @@
             // 
             textBoxViewAge.Anchor = AnchorStyles.None;
             textBoxViewAge.Enabled = false;
-            textBoxViewAge.Location = new Point(83, 45);
+            textBoxViewAge.Location = new Point(128, 38);
             textBoxViewAge.Name = "textBoxViewAge";
             textBoxViewAge.Size = new Size(100, 26);
             textBoxViewAge.TabIndex = 5;
@@ -746,7 +768,7 @@
             // 
             textBoxViewSex.Anchor = AnchorStyles.None;
             textBoxViewSex.Enabled = false;
-            textBoxViewSex.Location = new Point(83, 84);
+            textBoxViewSex.Location = new Point(128, 72);
             textBoxViewSex.Name = "textBoxViewSex";
             textBoxViewSex.Size = new Size(100, 26);
             textBoxViewSex.TabIndex = 6;
@@ -755,7 +777,7 @@
             // 
             textBoxViewLocation.Anchor = AnchorStyles.None;
             textBoxViewLocation.Enabled = false;
-            textBoxViewLocation.Location = new Point(83, 123);
+            textBoxViewLocation.Location = new Point(128, 106);
             textBoxViewLocation.Name = "textBoxViewLocation";
             textBoxViewLocation.Size = new Size(100, 26);
             textBoxViewLocation.TabIndex = 7;
@@ -766,7 +788,7 @@
             labelViewAge.AutoSize = true;
             labelViewAge.Font = new Font("Calibri", 11.25F);
             labelViewAge.ForeColor = Color.Black;
-            labelViewAge.Location = new Point(30, 49);
+            labelViewAge.Location = new Point(53, 42);
             labelViewAge.Name = "labelViewAge";
             labelViewAge.Size = new Size(36, 18);
             labelViewAge.TabIndex = 1;
@@ -778,7 +800,7 @@
             labelViewSex.AutoSize = true;
             labelViewSex.Font = new Font("Calibri", 11.25F);
             labelViewSex.ForeColor = Color.Black;
-            labelViewSex.Location = new Point(32, 88);
+            labelViewSex.Location = new Point(55, 76);
             labelViewSex.Name = "labelViewSex";
             labelViewSex.Size = new Size(34, 18);
             labelViewSex.TabIndex = 2;
@@ -790,11 +812,41 @@
             labelViewLocation.AutoSize = true;
             labelViewLocation.Font = new Font("Calibri", 11.25F);
             labelViewLocation.ForeColor = Color.Black;
-            labelViewLocation.Location = new Point(3, 127);
+            labelViewLocation.Location = new Point(26, 110);
             labelViewLocation.Name = "labelViewLocation";
             labelViewLocation.Size = new Size(63, 18);
             labelViewLocation.TabIndex = 3;
             labelViewLocation.Text = "Location:";
+            // 
+            // labelDietType
+            // 
+            labelDietType.Anchor = AnchorStyles.Right;
+            labelDietType.AutoSize = true;
+            labelDietType.Font = new Font("Calibri", 11.25F);
+            labelDietType.ForeColor = Color.Black;
+            labelDietType.Location = new Point(19, 143);
+            labelDietType.Name = "labelDietType";
+            labelDietType.Size = new Size(70, 18);
+            labelDietType.TabIndex = 8;
+            labelDietType.Text = "Diet Type:";
+            // 
+            // textBoxDietType
+            // 
+            textBoxDietType.Anchor = AnchorStyles.None;
+            textBoxDietType.Enabled = false;
+            textBoxDietType.Location = new Point(128, 139);
+            textBoxDietType.Name = "textBoxDietType";
+            textBoxDietType.Size = new Size(100, 26);
+            textBoxDietType.TabIndex = 10;
+            // 
+            // textBoxFeedTimes
+            // 
+            textBoxFeedTimes.Anchor = AnchorStyles.None;
+            textBoxFeedTimes.Enabled = false;
+            textBoxFeedTimes.Location = new Point(128, 171);
+            textBoxFeedTimes.Name = "textBoxFeedTimes";
+            textBoxFeedTimes.Size = new Size(100, 26);
+            textBoxFeedTimes.TabIndex = 11;
             // 
             // groupBoxPicture
             // 
@@ -1043,7 +1095,6 @@
             groupBoxActionLog.PerformLayout();
             groupBoxActions.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
-            tableLayoutPanel3.PerformLayout();
             groupBoxAnimalDetails.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
@@ -1131,6 +1182,10 @@
         private GroupBox groupBox4;
         private RichTextBox richTextBoxIntro;
         private Label labelAddNew;
-        private TextBox textBoxTreat;
+        private ComboBox comboBoxSelectFood;
+        private Label labelFeedTimes;
+        private Label labelDietType;
+        private TextBox textBoxDietType;
+        private TextBox textBoxFeedTimes;
     }
 }
